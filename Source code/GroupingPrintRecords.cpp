@@ -26,6 +26,7 @@ void login::GroupingPrintRecord() {
 	if (!previousRegister) {
 		PrintStudentData();
 	}
+	// problem where the same user won't be printed here, but turning this logic off would cause
 	while (true) {
 		cout << "Would you like to print your grouping record (Y/N)? ";
 		char answer;

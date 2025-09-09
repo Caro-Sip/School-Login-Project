@@ -1,13 +1,45 @@
 {
     "tasks": [
         {
+            "label": "Delete bin folder",
+            "type": "shell",
+            "command": "if (Test-Path bin) { Remove-Item bin -Recurse -Force }",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": ["-Command"]
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Delete obj folder",
+            "type": "shell",
+            "command": "if (Test-Path obj) { Remove-Item obj -Recurse -Force }",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": ["-Command"]
+                }
+            },
+            "problemMatcher": [],
+            "dependsOn": [
+                "Delete bin folder"
+            ]
+        },
+        {
             "label": "Create bin folder",
             "type": "shell",
             "command": "mkdir bin",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "problemMatcher": []
+            "problemMatcher": [],
+            "dependsOn": [
+                "Delete obj folder"
+            ]
         },
         {
             "label": "Create obj folder",
