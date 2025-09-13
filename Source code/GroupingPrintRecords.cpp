@@ -26,6 +26,16 @@ void login::GroupingPrintRecord() {
 	if (!previousRegister) {
 		PrintStudentData();
 	}
+	/* so a solution is another check where if the previous user is registered
+	while checking if the user added anymore subjects that will turn the flip to true
+	This new check also help prevent
+	*/
+	else if (previousRegister && newRegistry){
+		PrintStudentData();
+	}
+	/* The only problem with this logic is that the old user has a duplicate userdata
+	so a rework of PrintStudentData() needs to be rework
+	*/
 	while (true) {
 		cout << "Would you like to print your grouping record (Y/N)? ";
 		char answer;

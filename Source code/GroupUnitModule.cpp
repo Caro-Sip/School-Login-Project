@@ -69,6 +69,7 @@ void login::GroupUnitModule() {
 				}
 				cout << endl;
 				registered = true;
+				newRegistry = true;
 				AvailableUnitOutput();
 				grp++;
 

@@ -1,27 +1,14 @@
-Suon Caro
+Caro
 700012345
-2
-2026
+1
+2025
 Programming
-1E1
+1E4
+End
+Jessie
+700016983
+3
+2025
 Writing and Research Skills
 1E2
-End
-Pong Mengheang
-700023456
-3
-2023
-Programming
-1E3
-Writing and Research Skills
-1E1
-End
-Pong Mengheang
-700023456
-3
-2023
-Programming
-1E3
-Writing and Research Skills
-1E1
 End

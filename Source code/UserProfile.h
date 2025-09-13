@@ -34,6 +34,7 @@ protected:
 	bool RegisteredUnits[4] = { false, false, false, false };
 	bool registered = false;
 	bool previousRegister = false;
+	bool newRegistry = false;
 };
 
 class login : public UserProfile {

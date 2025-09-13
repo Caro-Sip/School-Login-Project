@@ -26,6 +26,10 @@ void login::PrintStudentData() {
 		cout << "Unable to open file";
 	}
 }
+// this function only append** new data without checking for duplicates
+// so we need to use ReadStudentData() to check for duplicates
+// using previousRegister and newRegistry to trigger the function
+// so Read function is not triggered everytime user login
 
 void login::ReadStudentData() {
 	ifstream file("StudentData.txt");
